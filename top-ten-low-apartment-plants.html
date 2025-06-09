@@ -1,68 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Top 10 Low Light Apartment Plants</title>
   <meta name="description" content="Discover the best low light indoor plants for your apartment. These houseplants thrive in low light conditions and are perfect for city living.">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
       color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     h1 {
       color: #2e7d32;
+      text-align: center;
     }
     .plant {
-      border-bottom: 1px solid #ccc;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 1rem;
       margin-bottom: 2rem;
-      padding-bottom: 1rem;
     }
     .plant img {
       max-width: 100%;
-      height: auto;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2e7d32;
+      color: white;
     }
   </style>
 </head>
 <body>
 
+<div class="container">
   <h1>Top 10 Low Light Apartment Plants</h1>
-  <p>Don’t let low light keep you from enjoying greenery indoors. These 10 low-light houseplants thrive in apartments and shady corners.</p>
+  <p>Don’t let low light keep you from enjoying greenery indoors. These 10 houseplants thrive in apartments and shady corners.</p>
 
   <div class="plant">
     <h2>1. Snake Plant (Sansevieria)</h2>
     <p>Nearly indestructible, this plant tolerates neglect and purifies air efficiently. Perfect for beginners.</p>
-    <img src="snake-plant.jpg" alt="Snake Plant in ceramic pot">
+    <img src="https://images.unsplash.com/photo-1603468621374-6f0e51d23338?auto=format&fit=crop&w=800&q=80" alt="Snake Plant in ceramic pot" />
   </div>
 
   <div class="plant">
     <h2>2. ZZ Plant (Zamioculcas zamiifolia)</h2>
-    <p>With glossy leaves and very low water needs, the ZZ Plant is ideal for dark corners.</p>
-    <img src="zz-plant.jpg" alt="ZZ Plant with glossy leaves">
+    <p>With glossy leaves and very low water needs, the ZZ Plant is ideal for dark corners and offices.</p>
+    <img src="https://images.unsplash.com/photo-1604026406715-80c6d93edb6d?auto=format&fit=crop&w=800&q=80" alt="ZZ Plant in white planter" />
   </div>
 
-  <!-- Add other plants similarly... -->
+  <!-- More plant entries go here... -->
 
-  <footer>
-    <p>© 2025 Urban Plant Care Project</p>
-  </footer>
+</div>
 
-  <!-- ✅ Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Top 10 Low Light Apartment Plants",
-    "itemListElement": [
-      {
+<footer>
+  <p>© 2025 Urban Plant Care Project</p>
+</footer>
+
+<!-- ✅ Schema.org: Organization & WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Urban Plant Care Project",
+  "url": "https://yourgithubusername.github.io/",
+  "logo": "https://yourgithubusername.github.io/logo.png",
+  "sameAs": [
+    "https://instagram.com/urbanplantcare",
+    "https://facebook.com/urbanplantcare"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Urban Plant Care Project",
+  "url": "https://yourgithubusername.github.io/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://yourgithubusername.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- ✅ Schema.org: ItemList with detailed ListItem entries -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top 10 Low Light Apartment Plants",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
         "@type": "Product",
-        "position": 1,
         "name": "Snake Plant",
-        "image": "https://yourdomain.github.io/snake-plant.jpg",
+        "image": "https://images.unsplash.com/photo-1603468621374-6f0e51d23338?auto=format&fit=crop&w=800&q=80",
         "description": "A tough, low-maintenance plant ideal for low light environments.",
-        "brand": "Urban Plant Care",
+        "brand": {
+          "@type": "Brand",
+          "name": "Urban Plant Care"
+        },
         "review": {
           "@type": "Review",
           "reviewRating": {
@@ -75,14 +128,20 @@
             "name": "Anna Green"
           }
         }
-      },
-      {
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
         "@type": "Product",
-        "position": 2,
         "name": "ZZ Plant",
-        "image": "https://yourdomain.github.io/zz-plant.jpg",
+        "image": "https://images.unsplash.com/photo-1604026406715-80c6d93edb6d?auto=format&fit=crop&w=800&q=80",
         "description": "Thrives on neglect. Glossy leaves. Very drought tolerant.",
-        "brand": "Urban Plant Care",
+        "brand": {
+          "@type": "Brand",
+          "name": "Urban Plant Care"
+        },
         "review": {
           "@type": "Review",
           "reviewRating": {
@@ -96,35 +155,36 @@
           }
         }
       }
-    ]
-  }
-  </script>
+    }
+  ]
+}
+</script>
 
-  <!-- ✅ Optional FAQ schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Which indoor plant grows best without sunlight?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Snake Plant and ZZ Plant are among the best for very low light conditions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are low light plants safe for pets?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Not all low light plants are pet-safe. Check our Pet-Friendly Plants page for more info."
-        }
+<!-- ✅ Schema.org: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which indoor plant grows best without sunlight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Snake Plant and ZZ Plant are excellent choices for areas with very low natural light."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Are low light plants safe for pets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some low light plants like Spider Plant are pet-safe, but others like Snake Plant can be mildly toxic to pets."
+      }
+    }
+  ]
+}
+</script>
 
 </body>
 </html>
