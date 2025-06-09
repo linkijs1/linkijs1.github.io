@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indoor Plant Fertilizing Calendar – FAQs</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How often should I fertilize my indoor plants?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most indoor plants benefit from fertilizing every 4–6 weeks during spring and summer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do indoor plants need fertilizer in winter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, most houseplants go dormant in winter and should not be fertilized."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What type of fertilizer is best for houseplants?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A balanced liquid houseplant fertilizer (e.g. 10-10-10 or 20-20-20) diluted to half strength works well."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <h1>Indoor Plant Fertilizing Calendar – Frequently Asked Questions</h1>
+  <h2>How often should I fertilize my indoor plants?</h2>
+  <p>Most plants do best when fertilized every 4–6 weeks during their active growing seasons (spring and summer).</p>
+
+  <h2>Do indoor plants need fertilizer in winter?</h2>
+  <p>Typically no — plants grow slowly or go dormant and don’t require feeding.</p>
+
+  <h2>What fertilizer should I use?</h2>
+  <p>A liquid, balanced houseplant fertilizer is ideal. Look for labels like 10-10-10 or 20-20-20.</p>
+</body>
+</html>
