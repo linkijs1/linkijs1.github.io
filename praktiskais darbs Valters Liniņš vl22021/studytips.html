@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studiju padomi - StudySpots</title>
+    <link rel="stylesheet" href="cssforstudyspots.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header-content">
+          <div class="logo">StudySpots</div>
+          <nav>
+            <ul>
+              <li><a href="studyspots.html">Galvenā lapa</a></li>
+              <li><a href="aboutus.html">Par lapu</a></li>
+              <li><a href="favspots.html">Iecienītākās vietas</a></li>
+              <li><a href="outsideoflu.html">Vietas ārpus LU</a></li>
+              <li><a href="studytips.html">Studiju padomi</a></li>
+            </ul>
+          </nav>
+          <button id="theme-toggle">☀ /🌙</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="tips-section">
+          <h2>Padomi efektīvai studēšanai</h2>
+          <ul class="tips-list">
+            <li>Ievēro dienas režīmu - mācies vienā un tajā pašā laikā katru dienu.</li>
+            <li>Izmanto Pomodoro tehniku - 25 minūšu darbs, 5 minūšu pauze.</li>
+            <li>Izvēlies klusu vidi bez traucēkļiem - piemēram, bibliotēku vai speciālu studiju telpu.</li>
+            <li>Ierobežo sociālos tīklus un telefonu lietošanu mācību laikā.</li>
+            <li>Dari pierakstus ar roku - tas uzlabo informācijas iegaumēšanu.</li>
+            <li>Veido kopsavilkumus, prāta kartes un diagrammas.</li>
+            <li>Sadaliet lielus uzdevumus mazākos, konkrētos soļos.</li>
+            <li>Noteikti nosaki prioritātes un termiņus.</li>
+            <li>Atkārto informāciju regulāri, ne tikai pirms eksāmena.</li>
+            <li>Strādā grupās, lai labāk izprastu grūtas tēmas.</li>
+            <li>Lieto digitālus rīkus - piemēram, Notion, Quizlet vai Google Calendar.</li>
+            <li>Nodrošini pietiekamu miegu - vismaz 7-8 stundas naktī.</li>
+            <li>Dzer pietiekami daudz ūdens un ēd sabalansēti.</li>
+            <li>Veic fiziskas aktivitātes starp mācību sesijām - palīdz saglabāt enerģiju.</li>
+            <li>Izmēģini mācīšanos ar skaņu - klausies lekcijas vai ierakstus.</li>
+            <li>Uzstādot mērķus katrai dienai, būs vieglāk koncentrēties.</li>
+            <li>Nebaidies lūgt palīdzību pasniedzējam vai kursabiedriem.</li>
+            <li>Maini mācību vidi, lai saglabātu svaigumu un interesi.</li>
+            <li>Apbalvo sevi pēc produktīvas darba sesijas - tas veicina motivāciju.</li>
+          </ul>
+
+          <div class="about-image">
+            <img src="students.jpg" alt="Students ar datoru un pierakstiem efektīvai studēšanai" />
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-content">
+          <div class="contact-label">Kontaktinformācija:</div>
+          <div class="contact-row">
+            <span><i class="icon">📧</i> vlinins03@gmail.com</span>
+            <span><i class="icon">📸</i> StudySpotsLU</span>
+            <span><i class="icon">📞</i> +371 12345678</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+      } else {
+        document.body.classList.add("light-mode");
+      }
+
+      const toggleButton = document.getElementById("theme-toggle");
+      toggleButton.addEventListener("click", () => {
+        const isDark = document.body.classList.toggle("dark-mode");
+        document.body.classList.toggle("light-mode", !isDark);
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+      });
+    </script>
+  </body>
+</html>
